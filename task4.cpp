@@ -67,9 +67,9 @@ int main()
     cout << "A middle: " << midA << endl;
 
     double MSD = 0;
-    for (int i = 0; i < 100; i++)
+    for (int i = 1; i < 100; i++)
     {
-        MSD += pow((valueA - values[i]), 2);
+        MSD += pow((values[i] - values[i-1]), 2);
     }
     MSD /= 100;
     cout << "MSD = " << MSD << endl;
